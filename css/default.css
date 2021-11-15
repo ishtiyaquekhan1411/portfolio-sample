@@ -274,7 +274,7 @@ h6 { font-size: 16px; }
 #skills {
   display: flex;
   justify-content: start;
-  width: 300px;
+  width: 500px;
   background-color: var(--preview-shadow);
   margin-bottom: 20px;
 }
