@@ -16,21 +16,11 @@ for (var i = 0; themeDots.length > i; i++) {
 }
 
 function setTheme(mode) {
-  if (mode == 'light') {
-    document.getElementById('theme-style').href = 'css/default.css';
+  let fileName = 'css/default.css';
+  if (mode != 'light') {
+    fileName = `css/${mode}.css`;
   }
-
-  if (mode == 'blue') {
-    document.getElementById('theme-style').href = 'css/blue.css';
-  }
-
-  if (mode == 'green') {
-    document.getElementById('theme-style').href = 'css/green.css';
-  }
-
-  if (mode == 'purple') {
-    document.getElementById('theme-style').href = 'css/purple.css';
-  }
+  document.getElementById('theme-style').href = fileName;
 
   localStorage.setItem('theme', mode);
 }

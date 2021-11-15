@@ -372,7 +372,7 @@ h6 { font-size: 16px; }
   }
 
   .about-wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
     grid-template-areas: 
     'about-me'
     'expertise'
@@ -381,5 +381,15 @@ h6 { font-size: 16px; }
 
   .expertise {
     border-top: 2px solid var(--theme-border-color); 
+  }
+
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    background-color: var(--preview-shadow);
+    margin-bottom: 20px;
   }
 }
