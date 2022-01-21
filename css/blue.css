@@ -8,4 +8,5 @@
   --preview-bg: rgb(251, 249, 243, 0.8);
   --preview-shadow:  #f0ead6;
   --button-color: black;
+  --box-shadow: -10px 15px 25px -9px rgba(94, 91, 91, 0.75);
 }
